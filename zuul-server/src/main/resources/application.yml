@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+server:
+  port: 9005
+spring:
+  application:
+    name: zuul-server
+zuul:
+  routes:
+    adi-admin:
+      path: /api/admin/**
+      serviceId: admin-app
+    api-client:
+      path: /api/client/**
+      serviceId: client-app
