@@ -11,6 +11,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kyyblabla/spring-cloud-demo.git
+          uri: http://localhost:3000/kyy/spring-cloud-demo.git
           search-paths: config-server/src/main/resources/config
       label: master
