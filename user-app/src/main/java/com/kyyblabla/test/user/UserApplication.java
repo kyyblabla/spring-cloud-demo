@@ -24,7 +24,6 @@ public class UserApplication {
         return String.format("[%s]:hello:%s", port, name);
     }
 
-
     public static void main(String[] args) {
 
         SpringApplication.run(UserApplication.class, args);

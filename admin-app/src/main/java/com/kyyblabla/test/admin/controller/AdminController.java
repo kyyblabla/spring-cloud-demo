@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created by kyy on 2018/1/19.
  */
-@RequestMapping("/admin")
 @RestController
 public class AdminController {
 
@@ -26,7 +27,8 @@ public class AdminController {
     private String foo;
 
     @GetMapping("/foo")
-    public String foo() {
+    public String foo(HttpServletRequest request) {
+        request.getHeader("token");
         return foo;
     }
 

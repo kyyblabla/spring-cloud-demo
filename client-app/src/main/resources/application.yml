@@ -7,11 +7,14 @@ server:
 spring:
   application:
     name: client-app
+  zipkin:
+      base-url: http://localhost:9008
+  sleuth:
+    sampler:
+      percentage: 1.0
 feign:
   hystrix:
     enabled: true
 management:
   security:
     enabled: false
-
-

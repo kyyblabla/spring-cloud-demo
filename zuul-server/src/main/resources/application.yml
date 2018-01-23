@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: zuul-server
+  zipkin:
+      base-url: http://localhost:9008
+  sleuth:
+    sampler:
+      percentage: 1.0
 zuul:
   routes:
     adi-admin:

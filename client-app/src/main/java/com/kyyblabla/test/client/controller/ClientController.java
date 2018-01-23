@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by kyy on 2018/1/19.
  */
-@RequestMapping("/client")
 @RestController
 public class ClientController {
 
